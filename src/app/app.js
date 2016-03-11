@@ -65,6 +65,9 @@ angular.module('wfm-mobile', [
         workorderManager: function(syncManagers) {
           return syncManagers.workorders;
         },
+        messageManager: function(syncManagers) {
+          return syncManagers.messages;
+        },
         resultManager: function(syncManagers) {
           return syncManagers.result;
         }

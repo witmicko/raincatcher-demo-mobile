@@ -58,7 +58,7 @@ angular.module('wfm-mobile', [
           return syncManagers.result;
         },
         messageManager: function(syncManagers) {
-          return messageSync.createManager();
+          return syncManagers.messages;
         }
       },
       controller: function($rootScope, $scope, $state, $mdSidenav, mediator, profileData, userClient, workorderSync, messageSync) {
@@ -124,7 +124,7 @@ angular.module('wfm-mobile', [
         value: profileData.id
       };
       var messageFilter = {
-        key: 'receiver',
+        key: 'receiverId',
         value: profileData.id
       }
     };

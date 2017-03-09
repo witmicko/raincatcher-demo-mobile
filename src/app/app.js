@@ -11,29 +11,29 @@ var config = require('./config.json');
 var mapModule = require('fh-wfm-map');
 
 angular.module('wfm-mobile', [
-  require('angular-messages')
-, require('angular-ui-router')
-, require('angular-material'),
-  require('fh-wfm-sync')
-, require('fh-wfm-message')
-, require('fh-wfm-mediator')
-, require('fh-wfm-workorder')
-, require('fh-wfm-result')
-, require('fh-wfm-workflow')
-, require('fh-wfm-appform')
-, require('fh-wfm-risk-assessment')
-, require('fh-wfm-vehicle-inspection')
-, require('fh-wfm-user')
-, mapModule({mobile: true})
-, require('fh-wfm-file')
-, require('fh-wfm-camera')
-, require('./workorder/workorder')
-, require('./workflow/workflow')
-, require('./message/message')
-, require('./setting/setting')
-, require('./auth/auth')
-, require('./calendar/calendar')
-, require('./file/file')
+  require('angular-messages'),
+  require('angular-ui-router'),
+  require('angular-material'),
+  require('fh-wfm-sync'),
+  require('fh-wfm-message'),
+  require('fh-wfm-mediator'),
+  require('fh-wfm-workorder'),
+  require('fh-wfm-result'),
+  require('fh-wfm-workflow'),
+  require('fh-wfm-appform'),
+  require('fh-wfm-risk-assessment'),
+  require('fh-wfm-vehicle-inspection'),
+  require('fh-wfm-user'),
+  mapModule({mobile: true}),
+  require('fh-wfm-file'),
+  require('fh-wfm-camera'),
+  require('./workorder/workorder'),
+  require('./workflow/workflow'),
+  require('./message/message'),
+  require('./setting/setting'),
+  require('./auth/auth'),
+  require('./calendar/calendar'),
+  require('./file/file')
 ])
 
 .config(function($stateProvider, $urlRouterProvider) {
